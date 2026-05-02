@@ -6,12 +6,12 @@
 <title>TIL · Elham Alavy</title>
 <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600&display=swap" rel="stylesheet">
 <style>
-:root{--green:#00ff88;--cyan:#00ffff;--pink:#ff88cc;--amber:#ffcc00;--purple:#bb88ff;--bg:#020c06;--bg2:#050f08;--bg3:#081a0d;--border:rgba(0,255,136,0.15);--border-bright:rgba(0,255,136,0.5);--text:#c8fce0;--text-dim:#4a7a5a;--mono:'Share Tech Mono',monospace;--display:'Orbitron',monospace;--body:'Rajdhani',sans-serif;}
+:root{--green:#3fb950;--cyan:#58a6ff;--pink:#f778ba;--amber:#e3b341;--purple:#bc8cff;--bg:#0d1117;--bg2:#161b22;--bg3:#1c2128;--border:rgba(63,185,80,0.2);--border-bright:rgba(63,185,80,0.6);--text:#e6edf3;--text-dim:#8b949e;--mono:'Share Tech Mono',monospace;--display:'Orbitron',monospace;--body:'Rajdhani',sans-serif;}
 *{margin:0;padding:0;box-sizing:border-box;}html{scroll-behavior:smooth;}
 body{background:var(--bg);color:var(--text);font-family:var(--body);min-height:100vh;overflow-x:hidden;}
 body::before{content:'';position:fixed;inset:0;background-image:linear-gradient(rgba(0,255,136,0.025) 1px,transparent 1px),linear-gradient(90deg,rgba(0,255,136,0.025) 1px,transparent 1px);background-size:44px 44px;pointer-events:none;z-index:0;}
 body::after{content:'';position:fixed;inset:0;background:repeating-linear-gradient(0deg,transparent,transparent 3px,rgba(0,0,0,0.06) 3px,rgba(0,0,0,0.06) 4px);pointer-events:none;z-index:0;}
-nav{position:fixed;top:0;width:100%;z-index:200;background:rgba(2,8,4,0.96);border-bottom:1px solid var(--border);backdrop-filter:blur(12px);height:52px;display:flex;align-items:center;justify-content:space-between;padding:0 2rem;}
+nav{position:fixed;top:0;width:100%;z-index:200;background:rgba(13,17,23,0.96);border-bottom:1px solid var(--border);backdrop-filter:blur(12px);height:52px;display:flex;align-items:center;justify-content:space-between;padding:0 2rem;}
 .nav-logo{font-family:var(--display);font-size:12px;color:var(--green);letter-spacing:4px;}.nav-logo span{color:var(--text-dim);}
 .nav-right{display:flex;align-items:center;gap:1.5rem;}
 .nav-link{font-family:var(--mono);font-size:11px;color:var(--text-dim);text-decoration:none;letter-spacing:2px;transition:color 0.2s;}.nav-link:hover{color:var(--green);}
@@ -19,7 +19,7 @@ nav{position:fixed;top:0;width:100%;z-index:200;background:rgba(2,8,4,0.96);bord
 .hero{position:relative;z-index:2;padding:100px 2rem 3rem;max-width:960px;margin:0 auto;}
 .boot-line{font-family:var(--mono);font-size:11px;color:var(--text-dim);letter-spacing:2px;margin-bottom:0.4rem;animation:fadein 0.5s ease forwards;}
 .boot-line:nth-child(2){animation-delay:0.3s;opacity:0;}.boot-line:nth-child(3){animation-delay:0.6s;opacity:0;}.boot-line:nth-child(4){animation-delay:0.9s;opacity:0;color:var(--green);}
-.hero-title{font-family:var(--display);font-size:clamp(3rem,8vw,6rem);font-weight:900;color:var(--green);letter-spacing:8px;line-height:1;text-shadow:0 0 60px rgba(0,255,136,0.25);margin:1.5rem 0 0.5rem;animation:glitch 0.8s ease 1.2s forwards;opacity:0;}
+.hero-title{font-family:var(--display);font-size:clamp(3rem,8vw,6rem);font-weight:900;color:var(--green);letter-spacing:8px;line-height:1;text-shadow:0 0 40px rgba(63,185,80,0.2);margin:1.5rem 0 0.5rem;animation:glitch 0.8s ease 1.2s forwards;opacity:0;}
 .hero-sub{font-family:var(--mono);font-size:13px;color:var(--cyan);letter-spacing:3px;margin-bottom:1.5rem;animation:fadein 0.5s ease 1.5s forwards;opacity:0;}
 .hero-desc{font-size:16px;color:var(--text-dim);font-weight:300;border-left:2px solid var(--green);padding-left:1rem;max-width:520px;line-height:1.8;animation:fadein 0.5s ease 1.8s forwards;opacity:0;}.hero-desc em{color:var(--green);font-style:normal;}
 .hero-mascots{font-family:var(--mono);font-size:11px;color:var(--pink);margin-top:1.5rem;line-height:1.6;animation:fadein 0.5s ease 2s forwards;opacity:0;white-space:pre;}
@@ -60,7 +60,7 @@ nav{position:fixed;top:0;width:100%;z-index:200;background:rgba(2,8,4,0.96);bord
 .tabs-nav::-webkit-scrollbar{display:none;}
 .tab-btn{font-family:var(--mono);font-size:11px;letter-spacing:2px;color:var(--text-dim);background:transparent;border:1px solid transparent;border-bottom:none;padding:10px 18px;cursor:pointer;white-space:nowrap;transition:all 0.2s;position:relative;top:1px;}
 .tab-btn:hover{color:var(--text);}.tab-btn.active{color:var(--green);border-color:var(--border);background:var(--bg2);border-bottom:1px solid var(--bg2);}
-.tab-count{font-size:9px;color:var(--text-dim);background:rgba(0,255,136,0.08);padding:1px 5px;border-radius:2px;margin-left:4px;}.tab-btn.active .tab-count{color:var(--green);}
+.tab-count{font-size:9px;color:var(--text-dim);background:rgba(63,185,80,0.08);padding:1px 5px;border-radius:2px;margin-left:4px;}.tab-btn.active .tab-count{color:var(--green);}
 .tab-panel{display:none;}.tab-panel.active{display:block;animation:fadein 0.3s ease;}
 .entry-grid{display:grid;gap:1rem;}
 .entry-card{background:var(--bg2);border:1px solid var(--border);padding:1.5rem;position:relative;overflow:hidden;transition:border-color 0.3s,background 0.3s;}
@@ -70,7 +70,7 @@ nav{position:fixed;top:0;width:100%;z-index:200;background:rgba(2,8,4,0.96);bord
 .entry-meta{display:flex;align-items:center;gap:12px;margin-bottom:0.75rem;flex-wrap:wrap;}
 .entry-date{font-family:var(--mono);font-size:10px;color:var(--text-dim);letter-spacing:2px;}
 .entry-tag{font-family:var(--mono);font-size:10px;letter-spacing:1px;padding:2px 8px;border-radius:2px;}
-.tag-tech{background:rgba(0,255,136,0.08);color:var(--green);border:1px solid rgba(0,255,136,0.2);}
+.tag-tech{background:rgba(63,185,80,0.08);color:var(--green);border:1px solid rgba(0,255,136,0.2);}
 .tag-book{background:rgba(255,204,0,0.08);color:var(--amber);border:1px solid rgba(255,204,0,0.2);}
 .tag-life{background:rgba(255,136,204,0.08);color:var(--pink);border:1px solid rgba(255,136,204,0.2);}
 .tag-music{background:rgba(255,136,204,0.08);color:var(--pink);border:1px solid rgba(255,136,204,0.2);}
@@ -78,7 +78,7 @@ nav{position:fixed;top:0;width:100%;z-index:200;background:rgba(2,8,4,0.96);bord
 .card-tech .entry-title{color:var(--green);}.card-book .entry-title{color:var(--amber);}.card-life .entry-title{color:var(--pink);}.card-music-entry .entry-title{color:var(--pink);}
 .entry-body{font-size:14px;color:var(--text-dim);font-weight:300;line-height:1.75;}.entry-body strong{color:var(--text);font-weight:600;}
 .mascot{font-family:var(--mono);font-size:11px;line-height:1.5;margin:1rem 0;padding:0.75rem 1rem;background:rgba(255,136,204,0.04);border:1px solid rgba(255,136,204,0.12);color:var(--pink);white-space:pre;}
-.entry-quote{font-family:var(--mono);font-size:12px;color:var(--green);margin-top:1rem;padding:0.75rem 1rem;background:rgba(0,255,136,0.04);border-left:2px solid var(--green);}
+.entry-quote{font-family:var(--mono);font-size:12px;color:var(--green);margin-top:1rem;padding:0.75rem 1rem;background:rgba(63,185,80,0.06);border-left:2px solid var(--green);}
 .card-book .entry-quote{color:var(--amber);border-left-color:var(--amber);background:rgba(255,204,0,0.04);}
 .card-life .entry-quote,.card-music-entry .entry-quote{color:var(--pink);border-left-color:var(--pink);background:rgba(255,136,204,0.04);}
 .entry-footer{display:flex;align-items:center;gap:8px;margin-top:1rem;padding-top:1rem;border-top:1px solid var(--border);}
@@ -712,19 +712,27 @@ renderQuotes();
   btn.classList.add('active');
 }
 
-// 🎵 Floating music player
+// 🎵 Floating music player — autoplay on load
 window.addEventListener('load', function(){
   var p = document.createElement('div');
-  p.style.cssText = 'position:fixed;bottom:1.5rem;right:1.5rem;z-index:9999;display:flex;align-items:center;gap:10px;background:rgba(2,12,6,0.97);border:1px solid rgba(0,255,136,0.3);padding:10px 16px;border-radius:4px;backdrop-filter:blur(10px);font-family:"Share Tech Mono",monospace;cursor:pointer;transition:border-color 0.3s;';
-  p.innerHTML = '<div id="mi" style="font-size:15px;">🎵</div><div style="font-size:10px;color:#00ff88;letter-spacing:2px;line-height:1.6;"><div id="ml">[ PLAY MUSIC ]</div><div style="color:#4a7a5a;font-size:9px;">Yann Tiersen · Amélie 🐰</div></div><div id="md" style="width:6px;height:6px;border-radius:50%;background:#4a7a5a;transition:all 0.3s;"></div><iframe id="mf" width="0" height="0" src="" frameborder="0" allow="autoplay;encrypted-media" style="position:absolute;opacity:0;pointer-events:none;"></iframe>';
-  p.onmouseover = function(){ this.style.borderColor='rgba(0,255,136,0.8)'; };
-  p.onmouseout = function(){ this.style.borderColor='rgba(0,255,136,0.3)'; };
-  var on = false;
+  p.style.cssText = 'position:fixed;bottom:1.5rem;right:1.5rem;z-index:9999;display:flex;align-items:center;gap:10px;background:rgba(13,17,23,0.97);border:1px solid rgba(63,185,80,0.3);padding:10px 16px;border-radius:4px;backdrop-filter:blur(10px);font-family:"Share Tech Mono",monospace;cursor:pointer;transition:border-color 0.3s;';
+  p.innerHTML = '<div id="mi" style="font-size:15px;">🎵</div><div style="font-size:10px;color:#3fb950;letter-spacing:2px;line-height:1.6;"><div id="ml">[ PLAY MUSIC ]</div><div style="color:#8b949e;font-size:9px;">Yann Tiersen · Amélie 🐰</div></div><div id="md" style="width:6px;height:6px;border-radius:50%;background:#4a7a5a;transition:all 0.3s;"></div><iframe id="mf" width="0" height="0" src="" frameborder="0" allow="autoplay;encrypted-media" style="position:absolute;opacity:0;pointer-events:none;"></iframe>';
+  p.onmouseover = function(){ this.style.borderColor='rgba(63,185,80,0.8)'; };
+  p.onmouseout = function(){ this.style.borderColor='rgba(63,185,80,0.3)'; };
+  var on = true;
+  // autoplay on load
+  setTimeout(function(){
+    document.getElementById('mf').src = 'https://www.youtube.com/embed/HR0p6AVOCXM?autoplay=1&loop=1&playlist=HR0p6AVOCXM&controls=0';
+    document.getElementById('md').style.background = '#3fb950';
+    document.getElementById('md').style.boxShadow = '0 0 8px #3fb950';
+    document.getElementById('ml').textContent = '[ NOW PLAYING ]';
+    document.getElementById('mi').textContent = '🔊';
+  }, 1500);
   p.onclick = function(){
     on = !on;
     document.getElementById('mf').src = on ? 'https://www.youtube.com/embed/HR0p6AVOCXM?autoplay=1&loop=1&playlist=HR0p6AVOCXM&controls=0' : '';
-    document.getElementById('md').style.background = on ? '#00ff88' : '#4a7a5a';
-    document.getElementById('md').style.boxShadow = on ? '0 0 8px #00ff88' : 'none';
+    document.getElementById('md').style.background = on ? '#3fb950' : '#8b949e';
+    document.getElementById('md').style.boxShadow = on ? '0 0 8px #3fb950' : 'none';
     document.getElementById('ml').textContent = on ? '[ NOW PLAYING ]' : '[ PLAY MUSIC ]';
     document.getElementById('mi').textContent = on ? '🔊' : '🎵';
   };
